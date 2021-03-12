@@ -1,4 +1,4 @@
-import Coin from './scratch-test/coin';
+import Coin from './getCoin/Coin-base';
 
 function App() {
   
