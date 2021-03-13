@@ -9,7 +9,7 @@ export default class Noawait extends React.Component{
         const url = "https://cors-anywhere.herokuapp.com/localbitcoins.com/buy-bitcoins-online/NGN/.json";
         const response = await fetch(url);
         const data = await response.json();
-        console.log(data);
+        console.log(data.data.ad_list[5].data.temp_price);
         this.setState({profile: data.data.ad_list[5].data.temp_price}); 
     }
   
